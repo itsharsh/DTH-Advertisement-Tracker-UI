@@ -1,0 +1,121 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ecommerce</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<style>
+span{
+  font-weight:500;
+  text-transform: uppercase;
+}
+
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">logger</a>
+            <a class="dropdown-item" href="#">ledger</a>
+
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'logout' %}" >Logout</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section style="padding: 10px;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+
+          <div class="col-md-12" style="margin-top: 20px;">
+            <span >USER INPUTS</span><br>
+            <span>CAMPAIGN NAME</span>
+          </div>
+          <div class="col-md-12" style="margin-top: 20px;">
+            <span >PERIOD</span><br>
+            <span style="margin-left: 30px;">SDK MONTHS</span><br>
+            <span  style="margin-left: 30px;">........</span><br>
+            <span >EDITS</span><br>
+            <span style="margin-left: 30px;">TEN SECS</span><br>
+            <span>TWENTY SECS</span><br>
+            <span>THIRTY SECS</span>
+
+            <span >NON FACTS</span><br>
+            <span style="margin-left: 30px;">L Bans</span><br>
+            <span style="margin-left: 30px;">moming sell</span><br>
+            <span  style="margin-left: 30px;">........</span><br>
+
+
+            <span >Logger</span><br>
+            <span style="margin-left: 30px;">sdk months</span><br>
+            <span style="margin-left: 30px;">one year</span><br>
+            <span style="margin-left: 30px;">unlimited</span><br>
+
+
+
+            <span >DATA upload</span><br>
+            <span style="margin-left: 30px;">av upload</span><br>
+            <span style="margin-left: 30px;">non fct upload</span><br>
+            <span style="margin-left: 30px;">excel</span><br>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <span>real time updates</span>
+        </div>
+
+  <div class="col-md-4">
+          <div class="col-md-12" style="margin-top:50%; padding: 10px;">
+            <span >channel time stamped ad clips</span><br>
+            <img src="{% static 'img/12.jpeg' %}" alt="" class="img-fluid" style="width: 250px; height: 250px; margin:20px 20px;">
+            <span >time stamped</span><br>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
